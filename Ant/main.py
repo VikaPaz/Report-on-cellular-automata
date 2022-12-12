@@ -104,12 +104,10 @@ if __name__ == '__main__':
                 flag = False
                 break
             if event.type == pg.MOUSEBUTTONDOWN:
-                print(1)
                 field.stand_ant(screen, event.pos)
                 ant = Ant()
                 flag = True
         if flag:
-            print(flag)
             ant.rotate()
             ant.move()
             ant.draw(screen)
@@ -118,8 +116,3 @@ if __name__ == '__main__':
         else:
             pass
             # break
-
-window = tk.Tk()
-label = tk.Label(text="Hello, Tkinter")
-label.pack()
-window.mainloop()
